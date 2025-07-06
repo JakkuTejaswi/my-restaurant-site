@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form with Close Button</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <center><h1 style="color: darkblue;">Tevala Restaruant</h1></center>
+
+  <div class="container mt-5" style="width: 500px; background-color:white">
+    <!-- Form Starts -->
+    <form id="contactForm" class="position-relative p-4 border rounded shadow" action="log.html" method="get">
+
+      <!-- ❌ Close Button -->
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-2" aria-label="Close" onclick="redirectToHome()"></button>
+
+      <h2>Contact Us</h2>
+      <div class="mb-3">
+        <label for="name" class="form-label">Username</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function redirectToHome() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
